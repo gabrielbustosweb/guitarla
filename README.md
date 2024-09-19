@@ -48,3 +48,6 @@ Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consult
 - La aplicación utiliza `localStorage` para almacenar el estado del carrito de compras.
 - Se implementan hooks personalizados como `useCart` para manejar la lógica del carrito.
 - La estructura del proyecto sigue una arquitectura modular para facilitar el mantenimiento y la escalabilidad.
+
+## Despliegue en Netlify
+La aplicación está desplegada en Netlify y puede ser vista en la siguiente URL: [GuitarLA-TS en Netlify](https://unrivaled-parfait-7d6338.netlify.app)
