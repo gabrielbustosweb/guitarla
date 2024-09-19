@@ -10,7 +10,7 @@ GuitarLA-TS es una aplicación web para la venta de guitarras. Los usuarios pued
 ## Instrucciones para la configuración y ejecución
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/guitarla-ts.git
+   git clone https://github.com/gabrielbustosweb/guitarla.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
