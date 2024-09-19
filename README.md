@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# GuitarLA-TS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto
+GuitarLA-TS es una aplicación web para la venta de guitarras. Los usuarios pueden navegar por una selección de guitarras, añadirlas a su carrito de compras, ajustar las cantidades y proceder a la compra. La aplicación está construida utilizando TypeScript y React.
 
-Currently, two official plugins are available:
+## Requisitos de instalación
+- Node.js (versión 14 o superior)
+- npm (versión 6 o superior) o yarn (versión 1 o superior)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instrucciones para la configuración y ejecución
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/guitarla-ts.git
+   ```
+2. Navega al directorio del proyecto:
+   ```bash
+   cd guitarla-ts
+   ```
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+   o si prefieres usar yarn:
+   ```bash
+   yarn install
+   ```
+4. Inicia la aplicación:
+   ```bash
+   npm start
+   ```
+   o si prefieres usar yarn:
+   ```bash
+   yarn start
+   ```
+5. Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
-## Expanding the ESLint configuration
+## Información sobre la licencia
+Este proyecto está licenciado bajo la Licencia MIT. Para más detalles, consulta el archivo `LICENSE`.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tecnologías usadas
+- React
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Otros detalles relevantes
+- La aplicación utiliza `localStorage` para almacenar el estado del carrito de compras.
+- Se implementan hooks personalizados como `useCart` para manejar la lógica del carrito.
+- La estructura del proyecto sigue una arquitectura modular para facilitar el mantenimiento y la escalabilidad.
